@@ -1,29 +1,3 @@
-"""
-Historical Backtesting Engine
-==============================
-
-Downloads historical OHLCV ("candlestick") data from a crypto exchange,
-caches it in a local SQLite database, and backtests a moving-average
-crossover strategy against it — with realistic execution (next-bar open,
-fees, slippage), a full trade ledger, warmup period handling, and gap-checked data.
-
-Note on Data Gaps
------------------
-The gap detection mechanism dynamically extrapolates the exchange's timestamp 
-grid backward and forward from the known cache data. This strictly catches 
-single missing boundary candles without falsely flagging user date requests 
-that happen to fall between exchange intervals. 
-
-Setup
------
-    pip install ccxt pandas matplotlib numpy
-
-Usage
------
-    python backtest_engine.py --symbol BTC/USDT --timeframe 1h \
-        --start 2023-01-01 --end 2024-01-01 --fast 20 --slow 50 --cash 10000
-"""
-
 import argparse
 import json
 import sqlite3
