@@ -1,0 +1,16 @@
+# Python environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Application Data
+data/
+*.db
+*.sqlite
+
+# Outputs
+*.png
+*.csv
+*.json
