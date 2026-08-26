@@ -43,7 +43,3 @@ python backtest_engine.py --symbol BTC/USDT --timeframe 1h \
 * **`--strict-warmup`**: Fail if the warmup period contains data gaps.
 * **`--plot`**: Save an equity curve chart next to the database.
 * **`--output`**: Also save results (json) or the trade ledger (csv).
-
-```
-
-```
